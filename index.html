@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FlexBox Practice</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- body -->
+    <div id="container">
+      <!-- header -->
+      <header>
+        <h1>
+          A Proper Page
+        </h1>
+      </header>
+      
+
+        <!-- navbar -->
+        <nav>
+          <button>Home</button>
+          <button>Flex</button>
+          <button>Box</button>
+          <button>Practice</button>
+          <button>Contact</button>
+        </nav>
+        <div id="midd">
+        <!-- side login/signup -->
+        <aside>
+          <div id="login">
+            <form action="submit.php" method="POST">
+              <div>
+                <label>Enter Username</label>
+                <input type="text" name="Username" placeholder="Username" autofocus="autofocus" required="required"/>
+              </div>
+              <div>
+                <label>Enter Password</label>
+                <input type="password" name="Password" placeholder="Password"  required="required"/>
+              </div>
+              <div>
+                <label>Confirm Password</label>
+                <input
+                  type="password"
+                  name="Confirm Password"
+                  placeholder="Confirm Password"
+                  required="required"
+                />
+              </div>
+              <div>
+                <label>Enter Date of Birth</label>
+                <input type="date" name="Age" id="age"
+                required="required" />
+              </div>
+              <div>
+                <label>Gender</label>
+                <select name="Gender" id="gender"  required="required">
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                </select>
+              </div>
+              <input type="submit" value="Sign Up" />
+              <!-- <input type="button" name="" id="" /> -->
+            </form>
+            <div id="centre"></div>
+        </aside>
+    
+        <div id="centre">
+          <textarea name="Text" id="texty" cols="30" rows="10" placeholder="Enter text here..."></textarea>
+          <button id = "copy">Copy Now</button>
+          <textarea name="Text" id="cTexty" cols="30" rows="10" placeholder="Copied text here..." disabled="disabled"></textarea>
+        </div>
+        </div>
+        <footer>A Web Page By Shaban</footer>
+      </div>
+      <script src="app.js"></script>
+  </body>
+</html>
